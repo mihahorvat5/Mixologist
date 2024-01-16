@@ -3,6 +3,10 @@
 # dependencies
 node_modules/
 
+google-services.json/
+GoogleService-Info.pslist/
+
+
 # Expo
 .expo/
 dist/
