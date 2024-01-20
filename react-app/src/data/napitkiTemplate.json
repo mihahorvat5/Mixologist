@@ -1,0 +1,208 @@
+[
+  {
+    "Name": "Margarita",
+    "Ingredients": [
+      "60 ml Tequila",
+      "30 ml Lime juice",
+      "30 ml Triple sec",
+      "Salt for rimming"
+    ],
+    "HowToMake": "Rim the glass with salt. Mix tequila, lime juice, and triple sec. Shake well and strain into the glass.",
+    "Category": "Classic"
+  },
+  {
+    "Name": "Martini",
+    "Ingredients": [
+      "60 ml Gin",
+      "15 ml Dry vermouth",
+      "Lemon twist for garnish"
+    ],
+    "HowToMake": "Stir gin and vermouth with ice, strain into a chilled glass. Garnish with a lemon twist.",
+    "Category": "Classic"
+  },
+  {
+    "Name": "Old Fashioned",
+    "Ingredients": [
+      "60 ml Bourbon",
+      "1 Sugar cube",
+      "3 Dashes bitters",
+      "Orange twist for garnish"
+    ],
+    "HowToMake": "Muddle sugar cube with bitters. Add bourbon and ice. Stir and garnish with an orange twist.",
+    "Category": "Whiskey"
+  },
+  {
+    "Name": "Piña Colada",
+    "Ingredients": [
+      "60 ml White rum",
+      "90 ml Pineapple juice",
+      "30 ml Coconut cream",
+      "Pineapple wedge for garnish"
+    ],
+    "HowToMake": "Blend rum, pineapple juice, and coconut cream with ice. Pour into a glass and garnish with a pineapple wedge.",
+    "Category": "Tropical"
+  },
+  {
+    "Name": "Mojito",
+    "Ingredients": [
+      "60 ml White rum",
+      "30 ml Lime juice",
+      "2 tsp Sugar",
+      "8 Fresh mint leaves",
+      "Soda water"
+    ],
+    "HowToMake": "Muddle mint leaves with sugar and lime juice. Add rum and ice. Top with soda water and stir gently.",
+    "Category": "Rum"
+  },
+  {
+    "Name": "Negroni",
+    "Ingredients": [
+      "30 ml Gin",
+      "30 ml Sweet vermouth",
+      "30 ml Campari",
+      "Orange slice for garnish"
+    ],
+    "HowToMake": "Stir gin, vermouth, and Campari with ice. Strain into a glass and garnish with an orange slice.",
+    "Category": "Classic"
+  },
+  {
+    "Name": "Cosmopolitan",
+    "Ingredients": [
+      "45 ml Vodka",
+      "30 ml Triple sec",
+      "15 ml Lime juice",
+      "7.5 ml Cranberry juice"
+    ],
+    "HowToMake": "Shake vodka, triple sec, lime juice, and cranberry juice with ice. Strain into a martini glass.",
+    "Category": "Vodka"
+  },
+  {
+    "Name": "Whiskey Sour",
+    "Ingredients": [
+      "60 ml Bourbon",
+      "22.5 ml Lemon juice",
+      "15 ml Simple syrup",
+      "Cherry for garnish"
+    ],
+    "HowToMake": "Shake bourbon, lemon juice, and simple syrup with ice. Strain into a glass and garnish with a cherry.",
+    "Category": "Whiskey"
+  },
+  {
+    "Name": "Daiquiri",
+    "Ingredients": [
+      "60 ml White rum",
+      "22.5 ml Lime juice",
+      "15 ml Simple syrup"
+    ],
+    "HowToMake": "Shake rum, lime juice, and simple syrup with ice. Strain into a chilled glass.",
+    "Category": "Rum"
+  },
+  {
+    "Name": "Espresso Martini",
+    "Ingredients": [
+      "45 ml Vodka",
+      "30 ml Coffee liqueur",
+      "30 ml Freshly brewed espresso",
+      "Coffee beans for garnish"
+    ],
+    "HowToMake": "Shake vodka, coffee liqueur, and freshly brewed espresso with ice. Strain into a martini glass and garnish with coffee beans.",
+    "Category": "Coffee"
+  },
+  {
+    "Name": "Gin and Tonic",
+    "Ingredients": ["60 ml Gin", "Tonic water", "Lime wedge for garnish"],
+    "HowToMake": "Pour gin over ice in a glass. Top with tonic water and garnish with a lime wedge.",
+    "Category": "Classic"
+  },
+  {
+    "Name": "Long Island Iced Tea",
+    "Ingredients": [
+      "15 ml Vodka",
+      "15 ml Rum",
+      "15 ml Gin",
+      "15 ml Tequila",
+      "30 ml Triple sec",
+      "22.5 ml Lemon juice",
+      "30 ml Simple syrup",
+      "Cola"
+    ],
+    "HowToMake": "Shake vodka, rum, gin, tequila, triple sec, lemon juice, and simple syrup with ice. Strain into a glass over ice and top with cola.",
+    "Category": "Mixed Drink"
+  },
+  {
+    "Name": "Tom Collins",
+    "Ingredients": [
+      "60 ml Gin",
+      "22.5 ml Lemon juice",
+      "15 ml Simple syrup",
+      "Soda water",
+      "Lemon slice for garnish"
+    ],
+    "HowToMake": "Shake gin, lemon juice, and simple syrup with ice. Strain into a glass over ice, top with soda water, and garnish with a lemon slice.",
+    "Category": "Gin"
+  },
+  {
+    "Name": "Blue Lagoon",
+    "Ingredients": [
+      "30 ml Vodka",
+      "30 ml Blue Curacao",
+      "Lemonade",
+      "Cherry for garnish"
+    ],
+    "HowToMake": "Pour vodka and blue curacao over ice in a glass. Top with lemonade and garnish with a cherry.",
+    "Category": "Blue"
+  },
+  {
+    "Name": "Mai Tai",
+    "Ingredients": [
+      "45 ml White rum",
+      "15 ml Fresh lime juice",
+      "15 ml Orange liqueur",
+      "22.5 ml Orgeat syrup",
+      "22.5 ml Dark rum",
+      "Mint sprig for garnish"
+    ],
+    "HowToMake": "Shake white rum, lime juice, orange liqueur, and orgeat syrup with ice. Strain into a glass with crushed ice. Float dark rum on top and garnish with mint sprig.",
+    "Category": "Tiki"
+  },
+  {
+    "Name": "Rum Punch",
+    "Ingredients": [
+      "60 ml Dark rum",
+      "30 ml Orange juice",
+      "30 ml Pineapple juice",
+      "15 ml Grenadine",
+      "Orange slice and cherry for garnish"
+    ],
+    "HowToMake": "Mix dark rum, orange juice, pineapple juice, and grenadine. Pour over ice and garnish with an orange slice and cherry.",
+    "Category": "Rum"
+  },
+  {
+    "Name": "Caipirinha",
+    "Ingredients": ["60 ml Cachaça", "1 Lime, cut into wedges", "2 tsp Sugar"],
+    "HowToMake": "Muddle lime wedges with sugar in a glass. Add cachaça and ice. Stir well.",
+    "Category": "Cachaça"
+  },
+  {
+    "Name": "Sex on the Beach",
+    "Ingredients": [
+      "45 ml Vodka",
+      "15 ml Peach schnapps",
+      "60 ml Cranberry juice",
+      "60 ml Orange juice"
+    ],
+    "HowToMake": "Shake vodka, peach schnapps, cranberry juice, and orange juice with ice. Strain into a glass over ice.",
+    "Category": "Fruity"
+  },
+  {
+    "Name": "Tequila Sunrise",
+    "Ingredients": [
+      "60 ml Tequila",
+      "120 ml Orange juice",
+      "15 ml Grenadine",
+      "Orange slice and cherry for garnish"
+    ],
+    "HowToMake": "Pour tequila and orange juice over ice in a glass. Slowly pour grenadine over the back of a spoon to create layers. Garnish with an orange slice and cherry.",
+    "Category": "Tequila"
+  }
+]
