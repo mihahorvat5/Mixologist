@@ -12,6 +12,7 @@ export default function RecipesListScreen(props) {
   useLayoutEffect(() => {
     navigation.setOptions({
       title: route.params?.title,
+      headerTintColor: "black", // Set the header text color to black
       headerRight: () => <View />,
     });
   }, []);
@@ -21,7 +22,10 @@ export default function RecipesListScreen(props) {
   };
 
   const renderRecipes = ({ item }) => (
-    <TouchableHighlight underlayColor="rgba(73,182,77,0.9)" onPress={() => onPressRecipe(item)}>
+    <TouchableHighlight
+      underlayColor="rgba(73,182,77,0.9)"
+      onPress={() => onPressRecipe(item)}
+    >
       <View style={styles.container}>
         <Image style={styles.photo} source={{ uri: item.photo_url }} />
         <Text style={styles.title}>{item.title}</Text>
@@ -32,7 +36,14 @@ export default function RecipesListScreen(props) {
 
   return (
     <View>
-      <FlatList vertical showsVerticalScrollIndicator={false} numColumns={2} data={recipesArray} renderItem={renderRecipes} keyExtractor={(item) => `${item.recipeId}`} />
+      <FlatList
+        vertical
+        showsVerticalScrollIndicator={false}
+        numColumns={2}
+        data={recipesArray}
+        renderItem={renderRecipes}
+        keyExtractor={(item) => `${item.recipeId}`}
+      />
     </View>
   );
 }

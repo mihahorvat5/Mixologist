@@ -15,20 +15,20 @@ const styles = StyleSheet.create({
   image: {
     ...StyleSheet.absoluteFillObject,
     width: "100%",
-    height: 250,
+    height: 500,
   },
   imageContainer: {
     flex: 1,
     justifyContent: "center",
     width: viewportWidth,
-    height: 250,
+    height: 500,
   },
   paginationContainer: {
     flex: 1,
     position: "absolute",
     alignSelf: "center",
     paddingVertical: 8,
-    marginTop: 200,
+    marginTop: 450,
   },
   paginationDot: {
     width: 8,
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "flex-start",
-    backgroundColor: '#876CFF', // Set the background color
+    backgroundColor: "#876CFF", // Set the background color
   },
   infoPhoto: {
     height: 20,

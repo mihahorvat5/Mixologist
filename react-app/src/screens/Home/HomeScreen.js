@@ -100,7 +100,7 @@ export default function HomeScreen(props) {
 
   const renderRecipes = ({ item }) => (
     <TouchableHighlight
-      underlayColor="rgba(173, 216, 230, 0.5)" // Set underlayColor to a blue hue
+      underlayColor="#876CFF" // Set underlayColor to a blue hue
       onPress={() => onPressRecipe(item)}
     >
       <View style={styles.container}>
