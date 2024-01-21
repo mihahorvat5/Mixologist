@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     borderRadius: 50, // Make it circular
     width: 50, // Set a fixed width
     height: 50, // Set a fixed height
-    backgroundColor: "#876CFF",
+    backgroundColor: "#008DA3",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,

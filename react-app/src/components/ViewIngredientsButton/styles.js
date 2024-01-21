@@ -9,14 +9,14 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
     borderRadius: 100,
-    borderColor: "#876CFF",
+    borderColor: "#008DA3",
     borderWidth: 3,
     justifyContent: "center",
     alignItems: "center",
   },
   text: {
     fontSize: 14,
-    color: "#876CFF",
+    color: "#008DA3",
     fontWeight: "bold",
   },
 });

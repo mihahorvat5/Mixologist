@@ -11,7 +11,7 @@ export default function DrawerContainer(props) {
       <View style={styles.container}>
         <MenuButton
           title="HOME"
-          source={require("../../../assets/icons/home.png")}
+          source={require("../../../assets/icons/home1.png")}
           onPress={() => {
             navigation.navigate("Home");
             navigation.closeDrawer();
@@ -19,7 +19,7 @@ export default function DrawerContainer(props) {
         />
         <MenuButton
           title="CATEGORIES"
-          source={require("../../../assets/icons/category.png")}
+          source={require("../../../assets/icons/category2.png")}
           onPress={() => {
             navigation.navigate("Categories");
             navigation.closeDrawer();
@@ -27,7 +27,7 @@ export default function DrawerContainer(props) {
         />
         <MenuButton
           title="OPEN PRODUCTS"
-          source={require("../../../assets/icons/pao.png")}
+          source={require("../../../assets/icons/cocktailList.png")}
           onPress={() => {
             navigation.navigate("Open products");
             navigation.closeDrawer();
@@ -35,7 +35,7 @@ export default function DrawerContainer(props) {
         />
         <MenuButton
           title="SEARCH"
-          source={require("../../../assets/icons/search.png")}
+          source={require("../../../assets/icons/search2.png")}
           onPress={() => {
             navigation.navigate("Search");
             navigation.closeDrawer();

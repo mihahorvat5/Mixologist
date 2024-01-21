@@ -23,7 +23,7 @@ export default function RecipesListScreen(props) {
 
   const renderRecipes = ({ item }) => (
     <TouchableHighlight
-      underlayColor="rgba(73,182,77,0.9)"
+      underlayColor="transparent"
       onPress={() => onPressRecipe(item)}
     >
       <View style={styles.container}>

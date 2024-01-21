@@ -4,28 +4,37 @@ import { RecipeCard } from "../../AppStyles";
 const styles = StyleSheet.create({
   container: {
     ...RecipeCard.container,
-    borderWidth: 0, // Set border width to 0 to make the border invisible
-    borderRadius: 10, // Add border radius for rounded corners
-    padding: 10, // Add padding for better spacing
-    marginBottom: 10, // Add margin bottom for better separation between items
+    borderWidth: 2,
+    borderColor: "#ddd",
+    borderRadius: 10,
+    padding: 1,
+    marginBottom: 10,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.27,
+    shadowRadius: 4.65,
+    elevation: 6,
+    flexDirection: "column",
   },
   photo: {
     ...RecipeCard.photo,
-    borderRadius: 10, // Add border radius to the top of the image
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
-    overflow: "hidden", // Clip the image to the rounded border
+    borderRadius: 10,
+    width: "100%",
   },
   title: {
     ...RecipeCard.title,
-    fontSize: 18, // Adjust font size for the title
-    fontWeight: "bold", // Make the title bold
-    marginTop: 8, // Add some margin at the top
+    fontSize: 18,
+    fontWeight: "bold",
+    marginTop: 4, // Adjust the marginTop value to reduce the space
+    textAlign: "center",
   },
   category: {
     ...RecipeCard.category,
-    fontSize: 16, // Adjust font size for the category
-    fontStyle: "italic", // Apply italic style to the category
+    fontSize: 16,
+    fontStyle: "italic",
   },
 });
 

@@ -29,7 +29,7 @@ function MainNavigator() {
         },
         headerStyle: {
           height: 120,
-          backgroundColor: "#876CFF",
+          backgroundColor: "#008DA3",
         },
         headerTitleContainerStyle: {
           alignItems: "center",

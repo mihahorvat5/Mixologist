@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "flex-start",
-    backgroundColor: "#876CFF", // Set the background color
+    backgroundColor: "#008DA3", // Set the background color
   },
   infoPhoto: {
     height: 20,
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: "bold",
     margin: 10,
-    color: "#876CFF",
+    color: "#008DA3",
   },
   infoDescriptionRecipe: {
     textAlign: "left",
