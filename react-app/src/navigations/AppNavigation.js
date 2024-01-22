@@ -6,12 +6,12 @@ import HomeScreen from "../screens/Home/HomeScreen";
 import CategoriesScreen from "../screens/Categories/CategoriesScreen";
 import RecipeScreen from "../screens/Recipe/RecipeScreen";
 import RecipesListScreen from "../screens/RecipesList/RecipesListScreen";
-import OdprtjeListScreen from "../screens/Odprtje/OdprtjeListScreen";
 import DrawerContainer from "../screens/DrawerContainer/DrawerContainer";
 import IngredientScreen from "../screens/Ingredient/IngredientScreen";
 import SearchScreen from "../screens/Search/SearchScreen";
 import IngredientsDetailsScreen from "../screens/IngredientsDetails/IngredientsDetailsScreen";
-import ScannerScreen from "../screens/Scanner/ScannerScreen";
+import FavortiesScreen from "../screens/Favorites/FavoritesScreen";
+
 
 const Stack = createStackNavigator();
 
@@ -41,14 +41,14 @@ function MainNavigator() {
       <Stack.Screen name="Categories" component={CategoriesScreen} />
       <Stack.Screen name="Recipe" component={RecipeScreen} />
       <Stack.Screen name="RecipesList" component={RecipesListScreen} />
-      <Stack.Screen name="Open products" component={OdprtjeListScreen} />
+      <Stack.Screen name="Favorites" component={FavortiesScreen} />
       <Stack.Screen name="Ingredient" component={IngredientScreen} />
       <Stack.Screen name="Search" component={SearchScreen} />
       <Stack.Screen
         name="IngredientsDetails"
         component={IngredientsDetailsScreen}
       />
-      <Stack.Screen name="Scanner" component={ScannerScreen} />
+      
     </Stack.Navigator>
   );
 }

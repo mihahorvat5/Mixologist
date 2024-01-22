@@ -26,10 +26,10 @@ export default function DrawerContainer(props) {
           }}
         />
         <MenuButton
-          title="OPEN PRODUCTS"
+          title="FAVORITES"
           source={require("../../../assets/icons/cocktailList.png")}
           onPress={() => {
-            navigation.navigate("Open products");
+            navigation.navigate("Favorites");
             navigation.closeDrawer();
           }}
         />
@@ -38,14 +38,6 @@ export default function DrawerContainer(props) {
           source={require("../../../assets/icons/search2.png")}
           onPress={() => {
             navigation.navigate("Search");
-            navigation.closeDrawer();
-          }}
-        />
-        <MenuButton
-          title="SCAN"
-          source={require("../../../assets/icons/qrcode.png")}
-          onPress={() => {
-            navigation.navigate("Scanner");
             navigation.closeDrawer();
           }}
         />

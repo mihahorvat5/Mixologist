@@ -23,7 +23,7 @@
     "expo-notifications": "~0.20.1",
     "expo-sqlite": "~11.3.3",
     "expo-status-bar": "~1.6.0",
-    "firebase": "^9.6.11",
+    "firebase": "10.7.1",
     "idb": "^7.1.1",
     "install": "^0.13.0",
     "mongodb": "^4.13.0",
