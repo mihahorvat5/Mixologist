@@ -75,8 +75,7 @@ const styles = StyleSheet.create({
   infoDescriptionRecipe: {
     textAlign: "left",
     fontSize: 16,
-    marginTop: 30,
-    margin: 15,
+    margin: 30,
   },
   infoRecipeName: {
     fontSize: 28,
@@ -84,6 +83,12 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "black",
     textAlign: "center",
+  },
+  descriptionTitle: {
+    fontSize: 14,
+    fontWeight: "bold",
+    color: "#000",
+    marginTop: 40,
   },
 });
 

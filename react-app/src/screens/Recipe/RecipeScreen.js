@@ -1,8 +1,22 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
-import { ScrollView, Text, View, Image, Dimensions, TouchableHighlight } from "react-native";
+import {
+  ScrollView,
+  Text,
+  View,
+  Image,
+  Dimensions,
+  TouchableHighlight,
+} from "react-native";
 import styles from "./styles";
 import Carousel, { Pagination } from "react-native-snap-carousel";
-import { getIngredientName, getCategoryName, getCategoryById, addOpenProduct } from "../../data/MockDataAPI";
+import {
+  getIngredientName,
+  getCategoryName,
+  getCategoryById,
+  addOpenProduct,
+  getIngredientsString, // Add this import
+  getHowToMakeString, // Add this import
+} from "../../data/MockDataAPI";
 import BackButton from "../../components/BackButton/BackButton";
 import ViewIngredientsButton from "../../components/ViewIngredientsButton/ViewIngredientsButton";
 const { width: viewportWidth } = Dimensions.get("window");
@@ -90,6 +104,7 @@ export default function RecipeScreen(props) {
       </View>
       <View style={styles.infoRecipeContainer}>
         <Text style={styles.infoRecipeName}>{item.title}</Text>
+
         <View style={styles.infoContainer}>
           <TouchableHighlight
             onPress={() =>
@@ -101,6 +116,7 @@ export default function RecipeScreen(props) {
             </Text>
           </TouchableHighlight>
         </View>
+
         <View style={styles.infoContainer}>
           <Text style={styles.infoRecipe}>{item.time}</Text>
         </View>
@@ -108,21 +124,28 @@ export default function RecipeScreen(props) {
         <View style={styles.infoContainer}>
           <ViewIngredientsButton
             onPress={() => {
-              
               const favoriteData = {
-                name: 'TEST'
+                name: "TEST",
               };
 
               addFavorite(favoriteData);
-
             }}
           />
         </View>
 
         <View style={styles.infoContainer}>
-          <Text style={styles.infoDescriptionRecipe}>{item.description}</Text>
+          <Text style={styles.descriptionTitle}>INGREDIENTS</Text>
+        </View>
+        <View style={styles.infoContainer}>
+          <Text style={styles.infoDescriptionRecipe}>{item.ingredients}</Text>
         </View>
 
+        <View style={styles.infoContainer}>
+          <Text style={styles.descriptionTitle}>HOW TO MAKE</Text>
+        </View>
+        <View style={styles.infoContainer}>
+          <Text style={styles.infoDescriptionRecipe}>{item.howToMake}</Text>
+        </View>
       </View>
     </ScrollView>
   );
