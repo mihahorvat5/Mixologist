@@ -125,7 +125,10 @@ export default function RecipeScreen(props) {
           <ViewIngredientsButton
             onPress={() => {
               const favoriteData = {
-                name: "TEST",
+                Name: item.title,
+                Ingredients: item.ingredients, 
+                HowToMake:item.howToMake, 
+                Category: getCategoryName(item.categoryId)
               };
 
               addFavorite(favoriteData);
