@@ -19,6 +19,9 @@ const styles = StyleSheet.create({
     color: "#00B1CC",
     fontWeight: "bold",
   },
+  buttonPressed: {
+    backgroundColor: '#E0E0E0', 
+  },
 });
 
 export default styles;
