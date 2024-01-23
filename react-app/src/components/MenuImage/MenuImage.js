@@ -5,8 +5,14 @@ import styles from "./styles";
 
 export default function MenuImage(props) {
   return (
-    <TouchableOpacity style={styles.headerButtonContainer} onPress={props.onPress}>
-      <Image style={styles.headerButtonImage} source={require("../../../assets/icons/menu.png")} />
+    <TouchableOpacity
+      style={styles.headerButtonContainer}
+      onPress={props.onPress}
+    >
+      <Image
+        style={styles.headerButtonImage}
+        source={require("../../../assets/icons/menu2.png")}
+      />
     </TouchableOpacity>
   );
 }

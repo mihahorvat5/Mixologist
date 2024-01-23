@@ -11,6 +11,7 @@ export default function CategoriesScreen(props) {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerTitleStyle: {
+        color: "white",
         fontWeight: "bold",
         textAlign: "center",
         alignSelf: "center",

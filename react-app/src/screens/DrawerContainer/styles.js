@@ -6,13 +6,16 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#008DA3",
+    backgroundColor: "#00B1CC",
   },
   container: {
     flex: 1,
     alignItems: "flex-start",
     paddingHorizontal: 20,
-    backgroundColor: "#008DA3",
+    backgroundColor: "#00B1CC",
+  },
+  text: {
+    color: "white", // Add this line to set text color to white
   },
 });
 

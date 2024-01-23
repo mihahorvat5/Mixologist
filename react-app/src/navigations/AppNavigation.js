@@ -12,7 +12,6 @@ import SearchScreen from "../screens/Search/SearchScreen";
 import IngredientsDetailsScreen from "../screens/IngredientsDetails/IngredientsDetailsScreen";
 import FavortiesScreen from "../screens/Favorites/FavoritesScreen";
 
-
 const Stack = createStackNavigator();
 
 function MainNavigator() {
@@ -23,13 +22,14 @@ function MainNavigator() {
           fontWeight: "bold",
           textAlign: "center",
           alignSelf: "center",
+          color: "white",
           flex: 1,
           marginTop: 18,
           backgroundColor: "transparent", // Adjust the alpha value (last parameter) for transparency
         },
         headerStyle: {
           height: 120,
-          backgroundColor: "#008DA3",
+          backgroundColor: "#00B1CC",
         },
         headerTitleContainerStyle: {
           alignItems: "center",
@@ -48,7 +48,6 @@ function MainNavigator() {
         name="IngredientsDetails"
         component={IngredientsDetailsScreen}
       />
-      
     </Stack.Navigator>
   );
 }
