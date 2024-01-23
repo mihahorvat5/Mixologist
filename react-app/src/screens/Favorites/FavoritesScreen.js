@@ -1,61 +1,70 @@
-import React, { useLayoutEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { FlatList, Text, View, TouchableHighlight, Image } from "react-native";
 import styles from "./styles";
-import { odprti } from "../../data/dataArrays";
 import MenuImage from "../../components/MenuImage/MenuImage";
-import { getCategoryName } from "../../data/MockDataAPI";
 import { getFavorites } from "../../firebase/firebaseService";
-import { useState, useEffect } from "react";
 
 export default function FavoritesScreen(props) {
-    const { navigation } = props;
-    const [favorites, setFavorites] = useState([])
+  const { navigation } = props;
+  const [favorites, setFavorites] = useState([]);
 
-    useEffect(() => {
-        // Fetch favorites when component mounts
-        const fetchFavorites = async () => {
-            const fetchedFavorites = await getFavorites();
-            setFavorites(fetchedFavorites);
-        };
 
-        fetchFavorites();
-    }, []);
+  useEffect(() => {
+    const fetchFavorites = async () => {
+      const fetchedFavorites = await getFavorites();
+      setFavorites(fetchedFavorites);
+    };
 
-    useLayoutEffect(() => {
-        navigation.setOptions({
-            headerLeft: () => (
-                <MenuImage
-                    onPress={() => {
-                        navigation.openDrawer();
-                    }}
-                />
-            ),
-            headerRight: () => <View />,
-        });
-    }, []);
+    fetchFavorites();
+  }, []);
 
-    //const onPressRecipe = (item) => {
-    //  navigation.navigate("Recipe", { item });
-    //};
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerLeft: () => (
+        <MenuImage
+          onPress={() => {
+            navigation.openDrawer();
+          }}
+        />
+      ),
+      headerRight: () => <View />,
+    });
+  }, []);
 
-    const renderRecipes = ({ item }) => (
-        <View style={styles.container}>
-      
-            <Text style={styles.title}>{item.name}</Text>
-        </View>
-    );
+  const onPressRecipe = (item) => {
+    // Navigation or other interaction logic here
+  };
+
+  const renderRecipes = ({ item}) => {
+   
 
     return (
-        <View>
-            {/* Use fetched data for the FlatList */}
-            <FlatList
-                vertical
-                showsVerticalScrollIndicator={false}
-                numColumns={2}
-                data={favorites} // Use the fetched favorites data
-                renderItem={renderRecipes}
-                keyExtractor={(item) => `${item.id}`} // Use the document ID as the key
-            />
+      <TouchableHighlight
+        underlayColor="transparent"
+        onPress={() => onPressRecipe(item)}
+      >
+        <View style={styles.container}>
+          <Image style={styles.photo} source={{uri: item.slike[0]}} />
+          <BlurOverlay />
+          <Text style={styles.title}>{item.name}</Text>
+          <Text style={styles.category}>{item.category}</Text>
         </View>
+      </TouchableHighlight>
     );
-}
+  };
+
+  const BlurOverlay = () => <View style={styles.blurOverlay} />;
+
+  return (
+    <View>
+      <FlatList
+        vertical
+        showsVerticalScrollIndicator={false}
+        numColumns={2}
+        data={favorites}
+        renderItem={renderRecipes}
+        keyExtractor={(item) => `${item.id}`}
+      />
+    </View>
+  );
+};

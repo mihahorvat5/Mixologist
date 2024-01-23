@@ -128,7 +128,8 @@ export default function RecipeScreen(props) {
                 Name: item.title,
                 Ingredients: item.ingredients, 
                 HowToMake:item.howToMake, 
-                Category: getCategoryName(item.categoryId)
+                Category: getCategoryName(item.categoryId),
+                slike: item.photosArray
               };
 
               addFavorite(favoriteData);
