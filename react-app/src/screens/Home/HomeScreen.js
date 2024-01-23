@@ -72,12 +72,7 @@ export default function HomeScreen(props) {
       rok_time = new Date(odprti[i].rok).getTime();
       console.log(danes_time);
 
-      if (danes == odprti[i].rok || danes_time > rok_time) {
-        schedulePushNotification(
-          "Time's up!",
-          `${odprti[i].title} bo kmalu potekel rok!`
-        );
-      }
+      
     }
   }, []);
 
