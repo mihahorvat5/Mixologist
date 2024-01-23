@@ -2,7 +2,7 @@ import React, { useState, useEffect, useLayoutEffect } from "react";
 import { FlatList, Text, View, TouchableHighlight, Image } from "react-native";
 import styles from "./styles";
 import MenuImage from "../../components/MenuImage/MenuImage";
-import { getFavorites } from "../../firebase/firebaseService";
+import { getFavorites, deleteFavorites, deleteFavoriteById } from "../../firebase/firebaseService";
 
 export default function FavoritesScreen(props) {
   const { navigation } = props;
@@ -32,7 +32,8 @@ export default function FavoritesScreen(props) {
   }, []);
 
   const onPressRecipe = (item) => {
-    // Navigation or other interaction logic here
+    deleteFavoriteById(item.id)
+    //deleteFavorites('favorites');
   };
 
   const renderRecipes = ({ item}) => {

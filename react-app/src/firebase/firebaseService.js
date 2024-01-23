@@ -1,5 +1,5 @@
 import { firestore } from './firebaseConfig';
-import { collection, addDoc, getDocs, query, where } from 'firebase/firestore';
+import { collection, addDoc, getDocs, query, doc, deleteDoc, where } from 'firebase/firestore';
 
 
 export const addFavorite = async (favorite) => {
@@ -41,3 +41,32 @@ export const getFavorites = async () => {
   }
 };
 
+
+
+// brisanje določenega
+export const deleteFavoriteById = async (favoriteId) => {
+  try {
+    const favoriteDocRef = doc(firestore, 'favorites', favoriteId);
+    await deleteDoc(favoriteDocRef);
+    console.log(`Izdelek s ID-jem ${favoriteId} je uspešno izbrisan`);
+  } catch (e) {
+    console.error(`Napaka pri brisanju izdelka s ID-jem ${favoriteId}: `, e);
+  }
+};
+
+
+
+// brisanje vsega
+export const deleteFavorites = async (collectionName) => {
+  try {
+    const q = query(collection(firestore, collectionName));
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach(async (doc) => {
+      await deleteDoc(doc.ref);
+      console.log(`Document with ID ${doc.id} successfully deleted`);
+    });
+    console.log(`Collection ${collectionName} successfully emptied`);
+  } catch (e) {
+    console.error(`Error emptying collection ${collectionName}: `, e);
+  }
+};
