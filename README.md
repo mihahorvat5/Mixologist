@@ -42,7 +42,7 @@ Mixologist je vaš osebni vodnik skozi pestro paleto izvrstnih in osvežujočih 
 - cd .\react-app\
 - npx expo start --tunnel
 
-2. Poskeniraj QR kodo (za Android moraš imeti aplikacijo Expo Go).
+2. Poskeniraj QR kodo (potrebuješ aplikacijo Expo Go).
 
 3. Če imaš zagnan simulator: Za IOS pritisni tipko "i" in se bo aplikacija zagnala v simulatorju
 
