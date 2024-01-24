@@ -34,7 +34,6 @@ Mixologist je vaš osebni vodnik skozi pestro paleto izvrstnih in osvežujočih 
 - yarn global upgrade expo-cli
 - yarn global add expo-cli@4.18.4 (izberi najnovejšo verzijo)
 - yarn expo upgrade 47.0.0
-- npx expo start --tunnel
 
 ## Uporaba
 
@@ -43,7 +42,7 @@ Mixologist je vaš osebni vodnik skozi pestro paleto izvrstnih in osvežujočih 
 - cd .\react-app\
 - npx expo start --tunnel
 
-2. Poskeniraj QR kodo (moreš imeti aplikacijo Expo Go).
+2. Poskeniraj QR kodo (za Android moraš imeti aplikacijo Expo Go).
 
 3. Če imaš zagnan simulator: Za IOS pritisni tipko "i" in se bo aplikacija zagnala v simulatorju
 
