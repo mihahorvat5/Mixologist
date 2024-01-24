@@ -2,21 +2,22 @@ import React, { useState, useEffect, useLayoutEffect } from "react";
 import { FlatList, Text, View, TouchableHighlight, Image } from "react-native";
 import styles from "./styles";
 import MenuImage from "../../components/MenuImage/MenuImage";
-import { getFavorites, deleteFavorites, deleteFavoriteById } from "../../firebase/firebaseService";
+import { getFavorites, deleteFavoriteById } from "../../firebase/firebaseService";
 
 export default function FavoritesScreen(props) {
   const { navigation } = props;
   const [favorites, setFavorites] = useState([]);
-
+  const [isItemDeleted, setIsItemDeleted] = useState(false);
 
   useEffect(() => {
     const fetchFavorites = async () => {
       const fetchedFavorites = await getFavorites();
       setFavorites(fetchedFavorites);
+      setIsItemDeleted(false); // Resetiranje stanja obnovi FlatList
     };
 
     fetchFavorites();
-  }, []);
+  }, [isItemDeleted]);
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -29,23 +30,21 @@ export default function FavoritesScreen(props) {
       ),
       headerRight: () => <View />,
     });
-  }, []);
+  }, [navigation]);
 
   const onPressRecipe = (item) => {
-    deleteFavoriteById(item.id)
-    //deleteFavorites('favorites');
+    deleteFavoriteById(item.id);
+    setIsItemDeleted(true); // Nastavitev stanja, ko je izdelek izbrisan
   };
 
-  const renderRecipes = ({ item}) => {
-   
-
+  const renderRecipes = ({ item }) => {
     return (
       <TouchableHighlight
         underlayColor="transparent"
         onPress={() => onPressRecipe(item)}
       >
         <View style={styles.container}>
-          <Image style={styles.photo} source={{uri: item.slike[0]}} />
+          <Image style={styles.photo} source={{ uri: item.slike[0] }} />
           <BlurOverlay />
           <Text style={styles.title}>{item.name}</Text>
           <Text style={styles.category}>{item.category}</Text>
@@ -68,4 +67,4 @@ export default function FavoritesScreen(props) {
       />
     </View>
   );
-};
+}
